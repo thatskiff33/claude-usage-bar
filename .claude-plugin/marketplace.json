@@ -1,0 +1,16 @@
+{
+  "name": "claude-usage-bar",
+  "owner": {
+    "name": "thatskiff33"
+  },
+  "metadata": {
+    "description": "Usage-limit bar for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "usage-bar",
+      "source": "./",
+      "description": "Shows the 5-hour (and optionally weekly) usage limit as a bar graph above the prompt"
+    }
+  ]
+}

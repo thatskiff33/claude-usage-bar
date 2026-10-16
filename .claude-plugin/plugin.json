@@ -2,6 +2,9 @@
   "name": "usage-bar",
   "version": "0.2.0",
   "description": "Shows the 5-hour (and optionally weekly) usage limit as a bar graph above the prompt",
+  "author": {
+    "name": "thatskiff33"
+  },
   "types": "./types/index.d.ts",
   "userConfig": {
     "showWeekly": {
