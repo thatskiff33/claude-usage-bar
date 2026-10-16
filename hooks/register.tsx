@@ -33,7 +33,7 @@ const store = async ($: EngineInterface, limits: SessionRateLimit[]) => {
 }
 
 export const register: Register = (on, options) => {
-  const showWeekly = options.showWeekly === true
+  const showWeekly = options.showWeekly !== false
 
   on('session.start', async ($, e, next) => {
     const result = await next(e)
