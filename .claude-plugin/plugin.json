@@ -1,7 +1,7 @@
 {
   "name": "usage-bar",
-  "version": "0.2.0",
-  "description": "Shows the 5-hour (and optionally weekly) usage limit as a bar graph above the prompt",
+  "version": "0.3.0",
+  "description": "Shows the 5-hour and weekly usage limits as a bar graph above the prompt",
   "author": {
     "name": "thatskiff33"
   },
@@ -11,7 +11,7 @@
       "type": "boolean",
       "title": "Show weekly usage",
       "description": "Also show the 7-day usage limit on the same line",
-      "default": false
+      "default": true
     }
   }
 }

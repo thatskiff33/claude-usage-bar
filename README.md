@@ -1,17 +1,17 @@
 # claude-usage-bar
 
-A Claude Code plugin that shows your 5-hour (and optionally weekly) usage limit as a bar graph just above the prompt, so you always know how much headroom you have left and when it resets.
+A Claude Code plugin that shows your 5-hour and weekly usage limits as bar graphs just above the prompt, so you always know how much headroom you have left and when it resets.
 
-![5-hour usage bar above the Claude Code prompt](docs/five-hour.png)
+![5-hour and 7-day usage bars above the Claude Code prompt](docs/weekly.png)
 
-With the weekly limit turned on, both windows share the same line:
+With the weekly limit turned off, the 5-hour bar gets the full width:
 
-![5-hour and 7-day usage bars side by side](docs/weekly.png)
+![5-hour usage bar on its own](docs/five-hour.png)
 
 ## What it shows
 
 - **5h** – the rolling 5-hour usage window
-- **7d** – the 7-day usage window (optional, off by default)
+- **7d** – the 7-day usage window (on by default, can be turned off)
 - How much of each window you've used, as a bar and a percentage
 - A countdown to when each window resets
 
@@ -45,7 +45,7 @@ Restart Claude Code (or run `/reload-plugins`) and the bar appears above the pro
 
 | Option              | Default | Description                                     |
 | ------------------- | ------- | ----------------------------------------------- |
-| Show weekly usage   | off     | Also show the 7-day usage limit on the same line |
+| Show weekly usage   | on      | Also show the 7-day usage limit on the same line |
 
 To change it, run `/plugin configure usage-bar@claude-usage-bar` inside Claude Code, then restart.
 
